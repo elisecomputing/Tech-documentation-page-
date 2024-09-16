@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <style>
+    /* Basic styles for demonstration */
+    #navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: 100%;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    #main-doc {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .main-section {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 600px) {
+      #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <header>
+      <h1>Documentation</h1>
+    </header>
+    <a class="nav-link" href="#introduction_to_web_design">Introduction to Web Design</a>
+    <a class="nav-link" href="#html_basics">HTML Basics</a>
+    <a class="nav-link" href="#css_fundamentals">CSS Fundamentals</a>
+    <a class="nav-link" href="#responsive_design">Responsive Design</a>
+    <a class="nav-link" href="#advanced_topics">Advanced Topics</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="introduction_to_web_design">
+      <header>
+        <h1>Introduction to Web Design</h1>
+      </header>
+      <p>Web design is the process of creating and maintaining websites. It encompasses several different aspects, including web page layout, content production, and graphic design. The goal of web design is to ensure a good user experience and effective communication through the website's interface.</p>
+      <p>Effective web design involves both visual and functional elements. Visual elements include layout, color schemes, and typography, while functional elements focus on usability, accessibility, and responsive design.</p>
+      <p>Good web design should prioritize user needs and goals. This includes ensuring that the website is easy to navigate, visually appealing, and provides clear information.</p>
+      <p>Some common tools used in web design include HTML, CSS, and JavaScript. These technologies work together to create and style web pages, add interactivity, and manage content.</p>
+      <ul>
+        <li>Understanding user needs</li>
+        <li>Designing for accessibility</li>
+        <li>Using color schemes effectively</li>
+        <li>Creating intuitive navigation</li>
+        <li>Ensuring content readability</li>
+      </ul>
+    </section>
+    
+    <section class="main-section" id="html_basics">
+      <header>
+        <h2>HTML Basics</h2>
+      </header>
+      <p>HTML (HyperText Markup Language) is the standard language used to create and design web pages. HTML elements are the building blocks of web pages and are used to structure content.</p>
+      <p>HTML elements are defined by tags, which are enclosed in angle brackets. For example:</p>
+      <code>&lt;div&gt;</code> - Defines a division or section in a document.<br>
+      <code>&lt;span&gt;</code> - Defines a section of inline text.<br>
+      <code>&lt;p&gt;</code> - Defines a paragraph.<br>
+      <code>&lt;a href=""&gt;</code> - Defines a hyperlink.<br>
+      <code>&lt;/a&gt;</code> - Closes the hyperlink tag.
+      <p>Here's an example of a basic HTML document structure:</p>
+      <code>&lt;html&gt;<br>
+      &lt;head&gt;<br>
+      &lt;title&gt;Document Title&lt;/title&gt;<br>
+      &lt;/head&gt;<br>
+      &lt;body&gt;<br>
+      &lt;h1&gt;Hello, World!&lt;/h1&gt;<br>
+      &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+      &lt;/body&gt;<br>
+      &lt;/html&gt;</code>
+      <ul>
+        <li>Basic HTML tags</li>
+        <li>Document structure</li>
+        <li>Attributes and values</li>
+        <li>HTML5 semantic elements</li>
+        <li>Forms and inputs</li>
+      </ul>
+    </section>
+    
+    <section class="main-section" id="css_fundamentals">
+      <header>
+        <h3>CSS Fundamentals</h3>
+      </header>
+      <p>CSS (Cascading Style Sheets) is used to style and layout web pages. CSS controls the visual presentation of HTML elements, including layout, colors, fonts, and spacing.</p>
+      <p>CSS rules are defined using selectors and declarations. A selector targets an HTML element, while declarations define the style properties to be applied.</p>
+      <p>Here's a simple example of CSS rules:</p>
+      <code>body {<br>
+      &nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+      &nbsp;&nbsp;background-color: #f4f4f4;<br>
+      }</code><br>
+      <code>p {<br>
+      &nbsp;&nbsp;color: #333;<br>
+      &nbsp;&nbsp;margin-bottom: 20px;<br>
+      }</code>
+      <ul>
+        <li>Selectors and specificity</li>
+        <li>Box model and layout</li>
+        <li>Styling text and fonts</li>
+        <li>Colors and background</li>
+        <li>Margins, padding, and borders</li>
+      </ul>
+    </section>
+    
+    <section class="main-section" id="responsive_design">
+      <header>
+        <h4>Responsive Design</h4>
+      </header>
+      <p>Responsive design ensures that web pages look good and function well on all devices, from desktop computers to mobile phones. This involves using flexible grids, layouts, and media queries to adapt the design to different screen sizes.</p>
+      <p>Media queries are a key component of responsive design. They apply different styles based on the characteristics of the device, such as screen width.</p>
+      <p>Here's an example of a media query that adjusts the navigation bar for smaller screens:</p>
+      <code>@media (max-width: 600px) {<br>
+      &nbsp;&nbsp;#navbar {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;width: 100%;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;height: auto;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br>
+      &nbsp;&nbsp;}<br>
+      }</code>
+      <ul>
+        <li>Media queries usage</li>
+        <li>Flexible grids and layouts</li>
+        <li>Viewport units</li>
+        <li>Responsive images and media</li>
+        <li>Mobile-first design approach</li>
+      </ul>
+    </section>
+    
+    <section class="main-section" id="advanced_topics">
+      <header>
+        <h5>Advanced Topics</h5>
+      </header>
+      <p>Advanced web design topics include more sophisticated techniques and tools that enhance the functionality and aesthetics of a website. These can include animations, transitions, and the use of frameworks and libraries.</p>
+      <p>JavaScript is often used to add interactivity and dynamic behavior to web pages. Here are a few JavaScript code snippets:</p>
+      <code>console.log('Hello World');</code><br>
+      <code>let x = 10;</code><br>
+      <code>const y = 20;</code><br>
+      <code>document.getElementById('id').innerHTML = 'Text';</code><br>
+      <code>fetch('ur
